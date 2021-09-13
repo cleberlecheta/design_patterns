@@ -12,9 +12,9 @@ import java.util.Locale;
  */
 public abstract class AbstractBike implements MotorcycleInterface {
 
-    private static final String SPACE = " ";
+    public static final String SPACE = " ";
 
-    protected String getNickname() {
+    public String getNickname() {
         return "";
     };
 
@@ -26,8 +26,7 @@ public abstract class AbstractBike implements MotorcycleInterface {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("- ")
-                .append(brand).append(SPACE)
+        sb.append(brand).append(SPACE)
                 .append(getStyle()).append(SPACE)
                 .append(getModelName()).append(SPACE);
 

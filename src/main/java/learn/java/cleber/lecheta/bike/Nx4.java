@@ -7,7 +7,7 @@ package learn.java.cleber.lecheta.bike;
 public class Nx4 extends AbstractBike {
 
     @Override
-    protected String getNickname() {
+    public String getNickname() {
         return "Falcon";
     }
 
